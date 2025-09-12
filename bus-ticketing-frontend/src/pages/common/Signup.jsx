@@ -24,10 +24,10 @@ const Signup = () => {
   return (
     <>
       <Header />
-      <div className="signup-page">
-        <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Sign Up</h2>
+  <div className="signup-page">
+    <h2 className="signup-title">Sign Up</h2>
         <form onSubmit={handleSubmit}>
-          <div style={{ marginBottom: '12px' }}>
+          <div className="signup-field">
             <label htmlFor="email">Email:</label><br />
             <input
               id="email"
@@ -35,10 +35,10 @@ const Signup = () => {
               value={email}
               onChange={e => setEmail(e.target.value)}
               required
-              style={{ width: '100%', padding: '8px', marginTop: '4px', border: '1px solid #ccc', borderRadius: '4px' }}
+              className="signup-input"
             />
           </div>
-          <div style={{ marginBottom: '12px' }}>
+          <div className="signup-field">
             <label htmlFor="password">Password:</label><br />
             <input
               id="password"
@@ -46,10 +46,10 @@ const Signup = () => {
               value={password}
               onChange={e => setPassword(e.target.value)}
               required
-              style={{ width: '100%', padding: '8px', marginTop: '4px', border: '1px solid #ccc', borderRadius: '4px' }}
+              className="signup-input"
             />
           </div>
-          <div style={{ marginBottom: '12px' }}>
+          <div className="signup-field">
             <label htmlFor="confirmPassword">Confirm Password:</label><br />
             <input
               id="confirmPassword"
@@ -57,13 +57,13 @@ const Signup = () => {
               value={confirmPassword}
               onChange={e => setConfirmPassword(e.target.value)}
               required
-              style={{ width: '100%', padding: '8px', marginTop: '4px', border: '1px solid #ccc', borderRadius: '4px' }}
+              className="signup-input"
             />
           </div>
-          {error && <div style={{ color: 'red', marginBottom: '12px' }}>{error}</div>}
-          <button type="submit" style={{ width: '100%', padding: '10px', background: '#222', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Sign Up</button>
+          {error && <div className="signup-error">{error}</div>}
+          <button type="submit" className="signup-btn">Sign Up</button>
         </form>
-        <div style={{ marginTop: '16px', textAlign: 'center' }}>
+        <div className="signup-link">
           <a href="/login">Already have an account? Login</a>
         </div>
       </div>

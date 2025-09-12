@@ -39,9 +39,9 @@ const AuthPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md p-8 space-y-6 bg-white rounded shadow">
-        <h2 className="text-2xl font-bold text-center text-gray-800">
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', background: '#f5f5f5' }}>
+      <div style={{ width: '100%', maxWidth: '400px', padding: '32px', background: '#fff', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+        <h2 style={{ fontSize: '2em', fontWeight: 'bold', textAlign: 'center', color: '#222' }}>
           {isLogin ? 'Login' : 'Sign Up'}
         </h2>
         <form className="space-y-4" onSubmit={handleAuth}>

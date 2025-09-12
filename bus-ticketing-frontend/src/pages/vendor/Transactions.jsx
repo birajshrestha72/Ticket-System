@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Transactions = () => (
-  <div className="p-6">Transactions Page</div>
+  <div className="transactions-page">Transactions Page</div>
 );
 
 export default Transactions;

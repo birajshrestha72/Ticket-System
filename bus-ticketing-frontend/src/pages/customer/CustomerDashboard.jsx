@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CustomerDashboard = () => (
-  <div className="p-6">Customer Dashboard</div>
+  <div className="customer-dashboard">Customer Dashboard</div>
 );
 
 export default CustomerDashboard;

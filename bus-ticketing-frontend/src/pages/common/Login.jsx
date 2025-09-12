@@ -22,10 +22,10 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div className="login-page">
-        <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Login</h2>
+  <div className="login-page">
+    <h2 className="login-title">Login</h2>
         <form onSubmit={handleSubmit}>
-          <div style={{ marginBottom: '12px' }}>
+          <div className="login-field">
             <label htmlFor="email">Email:</label><br />
             <input
               id="email"
@@ -33,10 +33,10 @@ const Login = () => {
               value={email}
               onChange={e => setEmail(e.target.value)}
               required
-              style={{ width: '100%', padding: '8px', marginTop: '4px', border: '1px solid #ccc', borderRadius: '4px' }}
+              className="login-input"
             />
           </div>
-          <div style={{ marginBottom: '12px' }}>
+          <div className="login-field">
             <label htmlFor="password">Password:</label><br />
             <input
               id="password"
@@ -44,13 +44,13 @@ const Login = () => {
               value={password}
               onChange={e => setPassword(e.target.value)}
               required
-              style={{ width: '100%', padding: '8px', marginTop: '4px', border: '1px solid #ccc', borderRadius: '4px' }}
+              className="login-input"
             />
           </div>
-          {error && <div style={{ color: 'red', marginBottom: '12px' }}>{error}</div>}
-          <button type="submit" style={{ width: '100%', padding: '10px', background: '#222', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Login</button>
+          {error && <div className="login-error">{error}</div>}
+          <button type="submit" className="login-btn">Login</button>
         </form>
-        <div style={{ marginTop: '16px', textAlign: 'center' }}>
+        <div className="login-link">
           <a href="/signup">Don't have an account? Sign up</a>
         </div>
       </div>
