@@ -6,8 +6,8 @@ const Header = () => (
     <ul>
       <li><img src={logo} alt="logo"></img></li>
       <li>Home</li>
-      <li>Bus Tickets</li>
-      <li>Routes</li>
+      <li>Bus Search</li>
+      <li>Booking</li>
       <li>About Us</li>
     </ul>
   </div>
