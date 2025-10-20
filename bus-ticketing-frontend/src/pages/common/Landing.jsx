@@ -1,5 +1,5 @@
 import React from 'react';
-import Booking from '../customer/Booking.jsx';
+//import Booking from '../customer/Booking.jsx';
 
 
 const Landing = () => (

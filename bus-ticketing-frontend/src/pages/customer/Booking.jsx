@@ -18,7 +18,7 @@ const Booking = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Seats booked: ${selectedSeats.join(', ')}`);
-    // TODO: Add booking logic
+    // TO DO: Add booking logic
   };
 
   // Generate seat layout
