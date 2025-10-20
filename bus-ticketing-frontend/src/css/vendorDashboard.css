@@ -1,3 +1,9 @@
+/* Vendor dashboard styles */
+.vendor-dashboard { padding: 20px; }
+.stats { display:flex; gap:12px; margin-bottom:16px; }
+.stat-card { background:#f0f0f0; padding:12px; border-radius:6px; min-width:120px; text-align:center; }
+.vendor-options { display:flex; gap:10px; flex-wrap:wrap; }
+.vendor-btn { padding:8px 12px; background:#09c; color:#fff; text-decoration:none; border-radius:6px; }
 /* Vendor Dashboard styles */
 .vendor-dashboard {
   padding: 24px;

@@ -1,3 +1,7 @@
+/* Billing styles */
+.vendor-billing { padding:20px; }
+.bill { border:1px solid #ddd; padding:12px; border-radius:6px; max-width:600px; }
+.bill-download { margin-top:12px; padding:8px 10px; background:#06c; color:#fff; border:none; border-radius:6px; }
 /* Billing page styles */
 .billing-page {
   padding: 24px;

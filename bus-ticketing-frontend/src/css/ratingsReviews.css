@@ -3,3 +3,6 @@
   padding: 24px;
   background: #fff;
 }
+
+.ratings-reviews ul { list-style:none; padding:0; }
+.ratings-reviews li { border:1px solid #eee; padding:8px; margin-bottom:8px; border-radius:6px; }

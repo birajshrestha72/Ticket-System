@@ -3,3 +3,10 @@
   padding: 24px;
   background: #fff;
 }
+
+.seats-grid { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+.seat { width:44px; height:44px; border-radius:6px; border:1px solid #ccc; display:inline-flex; align-items:center; justify-content:center; }
+.seat.available { background:#fff; }
+.seat.booked { background:#f66; color:#fff; }
+.seat-controls { margin-bottom:10px; }
+.legend { margin-top:8px; }
