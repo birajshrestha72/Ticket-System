@@ -1,6 +1,4 @@
-/* Landing page styles */
-.landing-page {
-  padding: 32px;
-  background: #e9ecef;
-  text-align: center;
-}
+@import './_design_tokens.css';
+.landing-page { padding:36px; text-align:center; }
+.landing-hero { background: linear-gradient(90deg, rgba(46,125,50,0.08), rgba(249,168,37,0.04)); padding:40px; border-radius:12px; }
+.landing-cta { margin-top:18px; }

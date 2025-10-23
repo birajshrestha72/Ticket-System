@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../../css/busManagement.css';
 
 const BusForm = ({ onSave, initial = null }) => {
   const [bus, setBus] = useState({ busNo: '', vendor: '', type: '', seats: 40 });

@@ -1,5 +1,8 @@
-/* Booking page styles */
-.booking-page {
-  padding: 24px;
-  background: #f8f8f8;
-}
+@import './_design_tokens.css';
+.booking-page { padding:24px; max-width:var(--max-width); margin:0 auto; }
+.booking-title { font-size:1.3rem; color:var(--primary-variant); }
+.seats-container { display:grid; grid-template-columns:repeat(8, 1fr); gap:8px; margin-top:12px; }
+.seat-btn { padding:8px; border-radius:8px; border:1px solid var(--border); background:#fff; }
+.seat-btn.selected { background:var(--primary); color:#fff; }
+.booking-btn { margin-top:12px; padding:10px; border-radius:8px; background:var(--primary); color:#fff; border:none; }
+

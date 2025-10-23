@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../../css/adminDashboard.css';
 
 export const RouteForm = ({ onSave, initial = null }) => {
   const [route, setRoute] = useState({ from: '', to: '', distance: '' });

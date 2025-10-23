@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../css/vendorDashboard.css';
 
 const VendorDashboard = () => {
   const [stats] = useState({ totalBuses: 5, totalBookings: 120, revenue: 56000, avgRating: 4.3 });

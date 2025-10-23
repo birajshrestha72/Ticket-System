@@ -6,7 +6,7 @@ import {
   signInWithPopup,
 } from 'firebase/auth';
 
-const AuthPage = () => {
+const AuthPage = ({ onLogin }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,6 +14,7 @@ const AuthPage = () => {
 
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handlePasswordChange = (e) => setPassword(e.target.value);
+
 
   const handleAuth = async (e) => {
     e.preventDefault();
@@ -24,6 +25,7 @@ const AuthPage = () => {
       } else {
         await createUserWithEmailAndPassword(auth, email, password);
       }
+      if (onLogin) onLogin();
     } catch (err) {
       setError(err.message);
     }
@@ -33,6 +35,7 @@ const AuthPage = () => {
     setError('');
     try {
       await signInWithPopup(auth, googleProvider);
+      if (onLogin) onLogin();
     } catch (err) {
       setError(err.message);
     }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../../css/vendorManagement.css';
 
 const VendorForm = ({ onSave, initial = null }) => {
   const [vendor, setVendor] = useState({ name: '', phone: '', email: '' });

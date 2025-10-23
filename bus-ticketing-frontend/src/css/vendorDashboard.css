@@ -1,9 +1,9 @@
-/* Vendor dashboard styles */
+@import './_design_tokens.css';
 .vendor-dashboard { padding: 20px; }
 .stats { display:flex; gap:12px; margin-bottom:16px; }
-.stat-card { background:#f0f0f0; padding:12px; border-radius:6px; min-width:120px; text-align:center; }
+.stat-card { background:var(--surface); padding:12px; border-radius:8px; min-width:120px; text-align:center; border:1px solid var(--border); }
 .vendor-options { display:flex; gap:10px; flex-wrap:wrap; }
-.vendor-btn { padding:8px 12px; background:#09c; color:#fff; text-decoration:none; border-radius:6px; }
+.vendor-btn { padding:8px 12px; background:var(--primary); color:#fff; text-decoration:none; border-radius:8px; }
 /* Vendor Dashboard styles */
 .vendor-dashboard {
   padding: 24px;

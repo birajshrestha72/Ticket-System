@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import BusForm from '../../components/admin/BusForm';
+import BusForm from './BusForm';
+import '../../css/busManagement.css';
 
 const sampleBuses = [
   { id: 1, busNo: 'BA 2 KHA 1234', vendor: 'ABC Travels', type: 'Deluxe', seats: 40 },

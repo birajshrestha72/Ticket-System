@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../css/vendorManagement.css';
 
 const VendorManagement = () => (
   <div className="vendor-management">

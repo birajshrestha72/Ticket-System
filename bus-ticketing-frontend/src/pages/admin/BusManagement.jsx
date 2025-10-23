@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../css/busManagement.css';
 
 const BusManagement = () => (
   <div className="bus-management">

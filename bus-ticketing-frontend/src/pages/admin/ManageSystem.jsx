@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { RouteForm, BusTypeForm, FareForm, CityForm } from '../../components/admin/SystemForms';
+import { RouteForm, BusTypeForm, FareForm, CityForm } from './SystemForms';
+import '../../css/adminDashboard.css';
 
 const ManageSystem = () => {
   const [routes, setRoutes] = useState([]);

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import VendorForm from '../../components/admin/VendorForm';
+import VendorForm from './VendorForm';
+import '../../css/vendorManagement.css';
 
 const sampleVendors = [
   { id: 1, name: 'ABC Travels', phone: '9800000000', email: 'abc@travels.com' },
